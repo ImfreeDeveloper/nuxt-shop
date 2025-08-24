@@ -1,12 +1,15 @@
 <template>
   <div>
-    login
+    {{ id }}
   </div>
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
+
+const id = ref(route.params.id)
 </script>
 
 <style scoped>
 
-</style>
+</style> 
