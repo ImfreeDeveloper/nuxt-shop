@@ -2,25 +2,39 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  runtimeConfig: { // задается в .env
+  runtimeConfig: {
+    // задается в .env
     token: '', // для сервера
-    public: { // для сервера и фронтенда
+    public: {
+      // для сервера и фронтенда
       apiurl: '',
+    },
+  },
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
+        },
+      ],
+      script: []
     },
   },
   icon: {
     customCollections: [
       {
-        prefix: "icons",
-        dir: "./app/assets/icons"
-      }
-    ]
+        prefix: 'icons',
+        dir: './app/assets/icons',
+      },
+    ],
   },
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/icon'
-  ]
+    '@nuxt/icon',
+    '@nuxtjs/tailwindcss',
+  ],
 })

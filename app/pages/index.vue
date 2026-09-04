@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <!-- <NuxtLink :to="{ name: '/about' }">About</NuxtLink> -->
+  <div class="flex">
+    <NuxtLink :to="{ name: 'about' }">About</NuxtLink>
     <Icon name="icons:tw"  />
     <button @click="openAbout">Перейти</button>
     <InputField variant="black" placeholder="Введите ваш email для подписки" />
@@ -8,7 +8,6 @@
 </template>
 
 <script setup lang="ts">
-
 function openAbout() {
   navigateTo('/about')
   navigateTo({ path: '/about' })
