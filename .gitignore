@@ -5,6 +5,7 @@
 .nitro
 .cache
 dist
+23-nuxt-app-master
 
 # Node dependencies
 node_modules

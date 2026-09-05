@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     public: {
       // для сервера и фронтенда
       apiurl: '',
+      imageurl: ''
     },
   },
   app: {
