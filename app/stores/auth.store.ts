@@ -1,3 +1,5 @@
+import { defineStore } from "pinia";
+
 export const useAuthStore = defineStore('auth', () => {
 	const token = ref<string | undefined>();
 	const email = ref<string | undefined>();
