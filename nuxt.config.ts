@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     public: {
       // для сервера и фронтенда
       apiurl: '',
-      imageurl: ''
+      imageurl: '',
     },
   },
   app: {
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
           href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
         },
       ],
-      script: []
+      script: [],
     },
   },
   icon: {
@@ -38,5 +38,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
   ],
 })
