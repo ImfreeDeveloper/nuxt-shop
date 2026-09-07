@@ -13,6 +13,11 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      title: 'Лабаз',
+      titleTemplate: '%s | Шикарный',
+      htmlAttrs: {
+        lang: 'ru'
+      },
       link: [
         {
           rel: 'stylesheet',

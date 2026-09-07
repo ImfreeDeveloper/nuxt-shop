@@ -26,6 +26,21 @@ import type { GetCategoriesResponse } from '~/components/interfaces/category.int
 import type { GetProductsResponse } from '~/components/interfaces/product.interfaces'
 import SelectField from '~/components/SelectField.vue'
 
+useSeoMeta({
+  title: 'Каталог лабаза',
+  description: 'Каталог товаров лабаза description',
+  ogDescription: 'Каталог товаров лабаза description'
+})
+
+// useHead({
+//   title: 'Каталог товаров',
+//   meta: [
+//     {
+//       name: 'description', content: 'Каталог товаров лабаза'
+//     }
+//   ]
+// })
+
 const config = useRuntimeConfig()
 const API_URL = config.public.apiurl
 
